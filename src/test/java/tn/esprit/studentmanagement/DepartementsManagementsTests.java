@@ -34,8 +34,8 @@ public class DepartementsManagementsTests {
     @Test
     void testGetAllDepartments() throws Exception {
         List<Department> departments = List.of(
-                new Department(1L, "CS", "Building A", "111-222", "Dr. Smith", null),
-                new Department(2L, "Math", "Building B", "333-444", "Dr. Jones", null)
+                new Department(1L, "CS", "tunis", "111-222", "Chouka", null),
+                new Department(2L, "Math", "tunis", "333-444", "Amine", null)
         );
 
         when(departmentService.getAllDepartments()).thenReturn(departments);
