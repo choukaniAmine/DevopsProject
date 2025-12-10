@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo "🔍 Running SonarQube analysis..."
                 // 'sonar' must match the name of your SonarQube server in Jenkins
-                withSonarQubeEnv('sonar') {
+                withSonarQubeEnv('chouka') {
                     sh """
                         mvn sonar:sonar \
                           -Dsonar.projectKey=chouka \
