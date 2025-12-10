@@ -42,14 +42,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
 
-            emailext (
-                subject: "Build ${currentBuild.fullDisplayName} - ${currentBuild.currentResult}",
-                body: "Le build ${env.BUILD_NUMBER} pour ${env.JOB_NAME} est terminé avec le statut : ${currentBuild.currentResult}.\n\nConsultez la console : ${env.BUILD_URL}",
-                to: "mohamedaminechoukani02@gmail.com"
-            )
-        }
-    }
 }
